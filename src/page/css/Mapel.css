@@ -1,0 +1,63 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .mapel-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .mapel-form label {
+    margin-bottom: 5px;
+  }
+  
+  .mapel-form input,
+  .mapel-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .mapel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .mapel-table th,
+  .mapel-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .mapel-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .mapel-table td:last-child {
+    text-align: center;
+  }
+  
+  .mapel-table button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .mapel-table button + button {
+    margin-left: 5px;
+  }
+
+  .btn-primary {
+    align-self: flex-start;
+  }

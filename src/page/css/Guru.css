@@ -1,0 +1,63 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .guru-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .guru-form label {
+    margin-bottom: 5px;
+  }
+  
+  .guru-form input,
+  .guru-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .guru-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .guru-table th,
+  .guru-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .guru-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .guru-table td:last-child {
+    text-align: center;
+  }
+  
+  .guru-table button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .guru-table button + button {
+    margin-left: 5px;
+  }
+
+  .btn-primary {
+    align-self: flex-start;
+  }

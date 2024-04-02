@@ -1,0 +1,121 @@
+/* Navbar.css adjustments for better aesthetics */
+
+.navbar {
+  background-color: #005f73;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Mengatur spasi antara elemen di dalam navbar */
+  align-items: center;
+  width: 100%;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links:hover, .logout-button:hover {
+  background-color: #e9d8a6;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-links:hover, .logout-button:hover {
+  background-color: #e9d8a6;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: Red;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-links, .logout-button {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover, .logout-button:hover {
+    background-color: #e9d8a6;
+    color: #000;
+    border-radius: 0;
+  }
+}
+
+.nav-menu.active {
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
